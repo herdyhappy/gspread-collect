@@ -12,6 +12,6 @@ Collecting Data from Google Sheet
 
 ### Install Dependencies
 1. pip install gspread pandas oauth2client
-2. 
+
 ### Address Google Sheet File
 1. Update the Google Sheet ID and worksheet name in the script to match your specific Google Sheet
