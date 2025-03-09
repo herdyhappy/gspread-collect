@@ -1,7 +1,7 @@
 # gspread-collect
 Collecting Data from Google Sheet
 
-## Steps
+## Setup
 ### Enable Google Sheets API
 1. Go to Google Cloud Console.
 2. Create a new project.
