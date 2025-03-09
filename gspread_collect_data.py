@@ -1,25 +1,11 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import gspread
 import pandas as pd
 from oauth2client.service_account import ServiceAccountCredentials
 import os
 
-
-# In[2]:
-
-
 # Google Sheets API Setup
 SCOPE = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 CREDENTIALS_PATH = "path/to/credentials.json"  # Update this with the actual path to your JSON file
-
-
-# In[3]:
-
 
 def fetch_google_sheets_data(sheet_id, worksheet_name):
     """Fetch data from Google Sheets using Sheet ID and return as a Pandas DataFrame."""
@@ -58,10 +44,3 @@ if __name__ == "__main__":
         print(df.head(5))  # Preview first 5 rows
         print(df.tail(5))  # Preview last 5 rows
         save_to_csv(df, "google_sheets_data.csv")
-
-
-# In[ ]:
-
-
-
-
